@@ -20,3 +20,10 @@ stages:
     - scripts/split.py
     outs:
     - datasets/stage3
+  train:
+    cmd: python3 scripts/model.py datasets/stage3/train.csv 
+    deps:
+    - datasets/stage3/train.csv 
+    - scripts/model.py
+    outs:
+    - model/model.pkl
