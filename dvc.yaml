@@ -27,3 +27,11 @@ stages:
     - scripts/model.py
     outs:
     - model/model.pkl
+  evaluate:
+    cmd: python3 scripts/evaluate.py datasets/stage3/test.csv model.pkl
+    deps: 
+    - model/model.pkl
+    - datasets/stage2/test.csv
+    - scripts/evaluate.py
+    outs:
+    - evaluate.json
