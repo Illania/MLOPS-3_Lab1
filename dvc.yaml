@@ -13,3 +13,10 @@ stages:
     - scripts/data_prepocessing.py
     outs:
     - datasets/stage2
+  data_split:
+    cmd: python3 scripts/split.py datasets/stage2/train.csv  
+    deps:
+    - datasets/stage2/train.csv 
+    - scripts/split.py
+    outs:
+    - datasets/stage3
