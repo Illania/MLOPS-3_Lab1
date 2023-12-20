@@ -1,4 +1,4 @@
-Added stage 'train' in 'dvc.yaml'
+Added stage 'evaluate' in 'dvc.yaml'
 
 To track the changes with git, run:
 

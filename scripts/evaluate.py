@@ -10,7 +10,7 @@ import pickle
 import json
 
 if len(sys.argv) != 2:
-    sys.stderr.write("Ошибка в аргументах. Пример выполнения:\n")
+    sys.stderr.write("Invalid arguments. Please use the example:\n")
     sys.stderr.write("python get_features.py data_file\n")
     sys.exit(1)
 
