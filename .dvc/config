@@ -1,0 +1,6 @@
+[core]
+    remote = ssh-storage
+['remote "ssh-storage"']
+    url = ssh://ag@127.0.0.1/opt/datasets
+    user = ag
+    port = 22
